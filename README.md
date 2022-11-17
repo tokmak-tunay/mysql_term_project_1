@@ -215,6 +215,9 @@ ORDER BY quantity DESC
 LIMIT 10;
 ```
 
+![products](https://user-images.githubusercontent.com/100707983/202535821-3965e1a2-f2ce-416f-a601-e8662b1e2d23.png)
+
+
 * Who are the most significant customers based on revenue stream?
 Analysis of the top customers based on the revenue they bring may be of use for customer relationship management. By applying a window function we can also see the products they are purchasing. 
 
