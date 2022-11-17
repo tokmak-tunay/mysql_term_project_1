@@ -18,7 +18,7 @@ is connected to orderItems through sellerID and. Products and orderItems are con
 
 The sales data warehouse constitutues the analytical layer. It consists of delivered orders.
 
-![ER Diagram]('er.png)
+![ER Diagram]('er.png')
 
 ## Dynamic Analytical Layer
 
