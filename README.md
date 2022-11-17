@@ -12,13 +12,15 @@ The main aim of the analysis is to answer the following questions:
 The layer consists of 7 related tables . Order table is connected to orderItems , payments, orderReviews through orderID, when it is connected to customers through customerID. Sellers table 
 is connected to orderItems through sellerID and. Products and orderItems are connected through productID. 
 
-
+![er](https://user-images.githubusercontent.com/100707983/202511278-fc23c32f-08d9-47db-81e6-0a1da49d0b8d.png)
 
 ## Analytical Layer
 
 The sales data warehouse constitutues the analytical layer. It consists of delivered orders.
 
-![er](https://user-images.githubusercontent.com/100707983/202511278-fc23c32f-08d9-47db-81e6-0a1da49d0b8d.png)
+![layers](https://user-images.githubusercontent.com/100707983/202524567-bbe8a85d-05f3-4969-8713-0162cc1382a2.png)
+
+
 
 
 ## Dynamic Analytical Layer
