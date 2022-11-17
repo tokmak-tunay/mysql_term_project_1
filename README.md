@@ -252,3 +252,6 @@ FROM sales
 GROUP BY productID
 HAVING (review = 'VERY BAD' OR 'BAD') AND (reviewCount > 5);
 ```
+
+![reviews](https://user-images.githubusercontent.com/100707983/202534901-a91b9a87-fc6b-4329-8c2e-77d21f747438.png)
+
