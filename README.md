@@ -57,6 +57,21 @@ DELIMITER ;
 A stored procedure is created to place an order. The procedure takes customerID and productID as parameters. To ensure data integrity , it checks whether the customer and the product exists in the database . If they exist, it places the order and updates customers, orders, and orderItems tables.
 The orderID is created randomly and encrypted using MD5 algorithm. If the order placement is successfull, the procedure returns a message.
 
+To be able to extract the price of a product, a prices table is created using orderItems table. Price of each product is assigned based on the itemID which means only one product was sold. Therefore, it was possible to have price information for each product. 
+
+```
+USE olist;
+
+CREATE TABLE prices AS 
+WITH productPrice AS (
+    SELECT p.productID, o.price, o.itemID
+FROM (SELECT DISTINCT productID FROM products) AS p
+INNER JOIN orderitems AS o
+USING(productID)
+WHERE itemID = 1
+) SELECT DISTINCT * FROM productPrice;
+```
+
 ```
 USE olist;
 
