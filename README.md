@@ -20,6 +20,8 @@ The sales data warehouse constitutues the analytical layer. It consists of deliv
 
 ![layers](https://user-images.githubusercontent.com/100707983/202524567-bbe8a85d-05f3-4969-8713-0162cc1382a2.png)
 
+The sales table consists of one fact and 5 dimensions that allows us to investigate orders based on customers,products,sellers,reviews and price .
+
 ![analytical](https://user-images.githubusercontent.com/100707983/202699419-cf779ff0-536c-4478-a521-0db53e105696.png)
 
 
