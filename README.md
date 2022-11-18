@@ -25,6 +25,8 @@ The sales data warehouse constitutues the analytical layer. It consists of deliv
 
 ## Dynamic Analytical Layer
 
+### Event to Keep Analytical Layer Updated
+
 An event is created to ensure that the sales data warehouse is updated twice a day per one month.
 
 
@@ -50,6 +52,7 @@ DELIMITER ;
 
 
 ```
+### Stored Procedure to Place an Order and Preserving the Data Integrity
 
 A stored procedure is created to place an order. The procedure takes customerID and productID as parameters. To ensure data integrity , it checks whether the customer and the product exists in the database . If they exist, it places the order and updates customers, orders, and orderItems tables.
 The orderID is created randomly and encrypted using MD5 algorithm. If the order placement is successfull, the procedure returns a message.
@@ -159,8 +162,9 @@ DELIMITER ;
 CALL placeOrder('104bdb7e6a6cdceaa88c3ea5fa6b2b93','000d9be29b5207b54e86aa1b1ac54872',@message);
 
 ```
+### Trigger to Automate Data Entry
 
-The data warehouse consists of delivered orders.Once the orderStatus of an order is updated as delivered, an update trigger sets delivery data automatically.
+The data warehouse consists of delivered orders.Once the orderStatus of an order is updated as delivered, an update trigger sets delivery date automatically.
 
 ```
 USE olist;
