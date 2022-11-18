@@ -20,6 +20,7 @@ The sales data warehouse constitutues the analytical layer. It consists of deliv
 
 ![layers](https://user-images.githubusercontent.com/100707983/202524567-bbe8a85d-05f3-4969-8713-0162cc1382a2.png)
 
+![analytical](https://user-images.githubusercontent.com/100707983/202698120-8c95535a-f2a8-4a50-9d1f-c6458caae5fd.png)
 
 
 
