@@ -199,6 +199,7 @@ LIMIT 10 ) AS s)
 ORDER BY revenue DESC)
 SELECT DISTINCT * FROM topSellers;
 ```
+![sellers](https://user-images.githubusercontent.com/100707983/202677854-1dad7e4e-78cd-4505-a841-afb97d975fbc.png)
 
 * What are the most popular products ?
 
@@ -235,6 +236,7 @@ LIMIT 10 ) AS s)
 ORDER BY revenue DESC)
 SELECT DISTINCT * FROM topCustomers;
 ```
+![customers](https://user-images.githubusercontent.com/100707983/202677931-7ad85d46-06a3-4334-8957-5383abbc0f55.png)
 
 * What are the products with the worst reviews ? 
 
