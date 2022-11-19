@@ -94,7 +94,8 @@ CREATE TABLE payments (
 );
 
 -- Upload Data
-
+-- The data should be in the relevant directory
+-- Adjust the path according to your server setup
 LOAD DATA INFILE 'c:/ProgramData/MySQL/MySQL Server 8.0/Uploads/customers.csv' 
 INTO TABLE customers 
 FIELDS TERMINATED BY ',' 
