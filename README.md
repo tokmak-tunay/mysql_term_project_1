@@ -208,7 +208,7 @@ DELIMITER ;
 
 * Who are the most significant sellers based on revenue stream?
 
-By creating the topSellers view, we are able to see the most significant sellers and their products.
+By creating the topSellers view, we are able to see the most significant sellers and their products. Using CTE and window functions allow us to see the sellers together with the products.
 This knowledge may be of use for the company in case they aim to strengthen the relationship with the sellers and expand the product line. 
 ```
 CREATE VIEW topSellers AS
